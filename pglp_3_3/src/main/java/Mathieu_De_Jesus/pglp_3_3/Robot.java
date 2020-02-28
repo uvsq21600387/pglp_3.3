@@ -31,6 +31,6 @@ public abstract class Robot {
 	}
 	
 	public Position getPosition() {
-		return position;
+		return new Position(position.x, position.y);
 	}
 }

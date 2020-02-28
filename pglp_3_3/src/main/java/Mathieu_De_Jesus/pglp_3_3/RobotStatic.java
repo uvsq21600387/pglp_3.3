@@ -6,10 +6,6 @@ public class RobotStatic {
 	private Position position;
 	
 	public RobotStatic() {
-		super();
-	}
-	
-	public void avance() throws Exception {
-		throw new Exception();
+		
 	}
 }
