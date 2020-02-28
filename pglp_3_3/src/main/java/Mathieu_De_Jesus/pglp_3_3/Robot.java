@@ -15,10 +15,18 @@ public abstract class Robot {
 	
 	public void tourne() {
 		switch(direction) {
-		case Nord : direction = Direction.Est; break;
-		case Sud : direction = Direction.Ouest; break;
-		case Ouest : direction = Direction.Nord; break;
-		case Est : direction = Direction.Sud; break;
+		case Nord :
+			direction = Direction.Est;
+		break;
+		case Sud :
+			direction = Direction.Ouest;
+		break;
+		case Ouest :
+			direction = Direction.Nord;
+		break;
+		case Est :
+			direction = Direction.Sud;
+		break;
 		}
 	}
 	
