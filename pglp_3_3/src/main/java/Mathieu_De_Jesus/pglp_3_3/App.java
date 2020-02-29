@@ -4,25 +4,34 @@ import java.util.ArrayList;
 
 /**
  * Hello world!
- *
  */
-public class App 
-{
-	
-	public static void avancerTous(ArrayList <Robot> r) {
-		for(Robot robot : r) {
+public final class App {
+	/**
+	 * constructeur de la classe App.
+	 */
+	private App() {
+	}
+	/**
+	 * fais avancer les robots dans la liste.
+	 * @param r liste des robots à faire avancer
+	 */
+	public static void avancerTous(final ArrayList<Robot> r) {
+		for (Robot robot : r) {
 			robot.avance();
 		}
 	}
-	
-    public static void main( String[] args )
-    {
-        ArrayList <Robot> r = new ArrayList <Robot> ();
+	/**
+	 * début du programme.
+	 * @param args arguments donnés au démarrage de l'application
+	 */
+    public static void main(final String[] args) {
+    	ArrayList<Robot> r = new ArrayList<Robot>();
         r.add(new RobotType1());
         r.add(new RobotType2(10));
         avancerTous(r);
-        for(Robot robot : r) {
+        for (Robot robot : r) {
 			System.out.println(robot.position.toString());
 		}
     }
 }
+

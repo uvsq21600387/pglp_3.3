@@ -1,19 +1,40 @@
 package Mathieu_De_Jesus.pglp_3_3;
 
+/**
+ * classe représentant une coordonnée sur un plan 2D
+ * avec une valeur x et y.
+ */
 public class Position {
-	
-	public int x,y;
-	
+	/**
+	 * valeur de l'abscisse.
+	 */
+	public int x;
+	/**
+	 * valeur de l'ordonnée.
+	 */
+	public int y;
+	/**
+	 * constructeur de la classe avec initialisation.
+	 * des coordonnées à x =0 et y = 0.
+	 */
 	public Position() {
-		x = y = 0;
+		x = 0;
+		y = 0;
 	}
-	
-	public Position(int x, int y) {
+	/**
+	 * constructeur de la classe.
+	 * @param x initialise x
+	 * @param y initialise y
+	 */
+	public Position(final int x, final int y) {
 		this.x = x;
 		this.y = y;
 	}
-	
+	/**
+	 * convertit les coordonnées au format String.
+	 * @return représentation au format String de la classe
+	 */
 	public String toString() {
-		return "("+ x + "," + y + ")";
+		return "(" + x + "," + y + ")";
 	}
 }

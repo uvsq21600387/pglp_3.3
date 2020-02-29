@@ -1,14 +1,15 @@
 package Mathieu_De_Jesus.pglp_3_3;
 
-public class RobotType1 extends Robot{
-	
-	public RobotType1() {
-		super();
-	}
-	
+/**
+ * un type de robot qui se déplace de 1 dans sa direction.
+ */
+public class RobotType1 extends Robot {
 	@Override
+	/**
+	 * fait avancer le robot selon sa direction.
+	 */
 	public void avance() {
-		switch(direction) {
+		switch (direction) {
 		case Nord :
 			position.y++;
 		break;
@@ -20,6 +21,8 @@ public class RobotType1 extends Robot{
 		break;
 		case Est :
 			position.x++;
+		break;
+		default :
 		break;
 		}
 	}
