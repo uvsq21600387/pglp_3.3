@@ -1,8 +1,12 @@
-package Mathieu_De_Jesus.pglp_3_3;
+package mathieu.pglp_3_3;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import mathieu.pglp_3_3.Position;
+import mathieu.pglp_3_3.Robot;
+import mathieu.pglp_3_3.RobotType2;
 
 /**
  * tests unitaires de la classe RobotType2
@@ -26,4 +30,17 @@ public class RobotType2Test {
 		r.avance();
 		assertTrue(r.getPosition().x == 4 && r.getPosition().y == 0);
 	}
+	
+	@Test
+    public void tourne() {
+        Robot r = new RobotType2(10,new Position(1,1));
+        r.tourne();
+        r.avance();
+        r.tourne();
+        r.avance();
+        r.tourne();
+        r.avance();
+        r.tourne();
+        r.avance();
+    }
 }

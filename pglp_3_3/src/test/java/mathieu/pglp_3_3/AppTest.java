@@ -1,4 +1,4 @@
-package Mathieu_De_Jesus.pglp_3_3;
+package mathieu.pglp_3_3;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

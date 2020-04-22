@@ -1,6 +1,8 @@
-package Mathieu_De_Jesus.pglp_3_3;
+package mathieu.pglp_3_3;
 
 import org.junit.Test;
+
+import mathieu.pglp_3_3.RobotStatic;
 
 /**
  * tests unitaires de la classe RobotStatic
